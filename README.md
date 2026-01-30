@@ -9,7 +9,7 @@ A comprehensive toolkit for audio processing tasks, including conversion, normal
 Clone the repository and install the package using pip:
 
 ```bash
-git clone https://github.com/yourusername/Audio-Swiss-Army-knife.git
+git clone https://github.com/freds0/Audio-Swiss-Army-knife
 cd Audio-Swiss-Army-knife
 pip install .
 ```
