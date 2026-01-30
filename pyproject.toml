@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "audio-swiss-army-knife"
+version = "0.1.0"
+description = "A Swiss Army knife for audio processing."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "User", email = "user@example.com" },
+]
+dependencies = [
+    "librosa",
+    "pydub",
+    "soundfile",
+    "numpy",
+    "torch",
+    "torchaudio",
+    "scipy",
+    "tqdm",
+    "ffmpeg-python",
+    "yt-dlp",
+    "webrtcvad",
+    "transformers",
+    "openai",
+    "accelerate",
+    "Resemblyzer",
+    "nemo_toolkit[asr]",
+    # "TTS",
+    "torchcodec",
+]
+
+[project.scripts]
+# Define CLI scripts here if needed, e.g.:
+# useful-audio = "useful_audio.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/audio_sak"]
